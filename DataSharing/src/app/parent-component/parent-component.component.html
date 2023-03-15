@@ -1,0 +1,7 @@
+<h1>Parent</h1>
+<app-child-component
+ [inputFromParent] = "sendThisTochild"
+ (sendOutputToParent) = "callthismethodOfParentOnChildTrigger($event)"
+></app-child-component>
+<button (click)=" sendingdataTochild()">send data to child</button>
+<h2>Parent Data recived from parent : {{thisIsParentDataHolder}}</h2>
